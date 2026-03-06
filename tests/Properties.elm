@@ -393,6 +393,20 @@ all =
             , ( gap2 (px 12) (em 3), "12px 3em" )
             , ( gap2 (pct 5) (vmin 2), "5% 2vmin" )
             ]
+        , testProperty { function = "rowGap", property = "row-gap" }
+            [ ( rowGap initial, "initial" )
+            , ( rowGap unset, "unset" )
+            , ( rowGap inherit, "inherit" )
+            , ( rowGap (rem 10), "10rem" )
+            , ( rowGap (pct 5), "5%" )
+            ]
+        , testProperty { function = "columnGap", property = "column-gap" }
+            [ ( columnGap initial, "initial" )
+            , ( columnGap unset, "unset" )
+            , ( columnGap inherit, "inherit" )
+            , ( columnGap (px 12), "12px" )
+            , ( columnGap (em 5), "5em" )
+            ]
         , testProperty { function = "fontWeight", property = "font-weight" }
             [ ( fontWeight bold, "bold" )
             , ( fontWeight normal, "normal" )
