@@ -407,6 +407,42 @@ all =
             , ( columnGap (px 12), "12px" )
             , ( columnGap (em 5), "5em" )
             ]
+        , testProperty { function = "columnCount", property = "column-count" }
+            [ ( columnCount initial, "initial" )
+            , ( columnCount unset, "unset" )
+            , ( columnCount inherit, "inherit" )
+            , ( columnCount auto, "auto" )
+            , ( columnCount (int 5), "5" )
+            ]
+        , testProperty { function = "columnWidth", property = "column-width" }
+            [ ( columnWidth initial, "initial" )
+            , ( columnWidth unset, "unset" )
+            , ( columnWidth inherit, "inherit" )
+            , ( columnWidth auto, "auto" )
+            , ( columnWidth (px 240), "240px" )
+            , ( columnWidth (vh 40), "40vh" )
+            ]
+        , testProperty { function = "columnRuleColor", property = "column-rule-color" }
+            [ ( columnRuleColor initial, "initial" )
+            , ( columnRuleColor unset, "unset" )
+            , ( columnRuleColor inherit, "inherit" )
+            , ( columnRuleColor currentColor, "currentColor" )
+            , ( columnRuleColor (rgb 11 14 17), "rgb(11,14,17)" )
+            ]
+        , testProperty { function = "columnRuleStyle", property = "column-rule-style" }
+            [ ( columnRuleStyle initial, "initial" )
+            , ( columnRuleStyle unset, "unset" )
+            , ( columnRuleStyle inherit, "inherit" )
+            , ( columnRuleStyle solid, "solid" )
+            , ( columnRuleStyle hidden, "hidden" )
+            ]
+        , testProperty { function = "columnRuleWidth", property = "column-rule-width" }
+            [ ( columnRuleWidth initial, "initial" )
+            , ( columnRuleWidth unset, "unset" )
+            , ( columnRuleWidth inherit, "inherit" )
+            , ( columnRuleWidth (pct 45), "45%" )
+            , ( columnRuleWidth (em 64), "64em" )
+            ]
         , testProperty { function = "fontWeight", property = "font-weight" }
             [ ( fontWeight bold, "bold" )
             , ( fontWeight normal, "normal" )
