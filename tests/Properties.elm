@@ -380,6 +380,13 @@ all =
             ]
         , testProperty { function = "order", property = "order" }
             [ ( order (int 1), "1" ) ]
+        , testProperty { function = "gap", property = "gap" }
+            [ ( gap initial, "initial" )
+            , ( gap unset, "unset" )
+            , ( gap inherit, "inherit" )
+            , ( gap (px 12), "12px" )
+            , ( gap (pct 5), "5%" )
+            ]
         , testProperty { function = "fontWeight", property = "font-weight" }
             [ ( fontWeight bold, "bold" )
             , ( fontWeight normal, "normal" )
