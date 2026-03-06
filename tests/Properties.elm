@@ -387,6 +387,12 @@ all =
             , ( gap (px 12), "12px" )
             , ( gap (pct 5), "5%" )
             ]
+        , testProperty { function = "gap2", property = "gap" }
+            [ ( gap2 initial unset, "initial unset" )
+            , ( gap2 unset inherit, "unset inherit" )
+            , ( gap2 (px 12) (em 3), "12px 3em" )
+            , ( gap2 (pct 5) (vmin 2), "5% 2vmin" )
+            ]
         , testProperty { function = "fontWeight", property = "font-weight" }
             [ ( fontWeight bold, "bold" )
             , ( fontWeight normal, "normal" )
